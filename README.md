@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/59a03ed4-bf70-4441-b65c-200bcd61c013/deploy-status)](https://app.netlify.com/sites/shortstax/deploys)
-
 ### CSS
 [PostCSS](https://postcss.org) to  **bundle**, **import from NPM, local or remote URLs**, handy [easings](https://easings.net), plus [postcss-preset-env](https://preset-env.cssdb.org/) for **latest CSS features**. 
 
@@ -16,28 +14,21 @@
 <br><br>
 
 ## Getting Started
-[use this as a Github template](https://github.com/argyleink/shortstack/generate)
-
-OR
 
 #### Clone Shortstack into a new folder
 1. `mkdir new-project-name && cd $_`
-1. `git clone --depth=1 https://github.com/argyleink/shortstack.git . && rm -rf ./.git`
-
-OR (essentially the same thing with npx+degit)
-
-1. `npx degit argyleink/shortstack`
+1. `git clone --depth=1 https://github.com/DmitrySharabin/shortstack-yarn.git . && rm -rf ./.git`
 
 #### Install tools and spin it up
-1. `npm i`
-1. `npm start`
+1. `yarn`
+1. `yarn start`
 
 <br><br>
 
 ## Development
-Running `npm start` runs Browsersync, Rollup and Postcss concurrently, watching changes to your files in `./app` and refreshes connected browsers.
+Running `yarn start` runs Browsersync, Rollup and Postcss concurrently, watching changes to your files in `./src` and refreshes connected browsers.
 
 ## Production
-Running `npm run build` compiles and minifies your code in `app` and outputs the optimised result to a folder called `dist` that's ready for static hosting.
+Running `yarn build` compiles and minifies your code in `src` and outputs the optimised result to a folder called `dist` that's ready for static hosting.
 
-Running `npm run production` will build your project and start a server at `dist`.
+Running `yarn production` will build your project and start a server at `dist`.
